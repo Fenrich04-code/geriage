@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Download the Geri-age AI age app for Android.">
+    <meta name="theme-color" content="#101812">
+    <title>Geri-age AI age app | Download</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #101812;
+        color: #f1f5ee;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+        background:
+          radial-gradient(ellipse at 50% 38%, rgb(91 139 90 / 15%), transparent 48%),
+          #101812;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .page {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      .topbar,
+      .footer {
+        width: min(100% - 48px, 1080px);
+        margin-inline: auto;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-block: 28px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 15px;
+        font-weight: 650;
+        letter-spacing: -0.02em;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 34px;
+        height: 34px;
+        place-items: center;
+        border: 1px solid rgb(185 226 153 / 28%);
+        border-radius: 11px;
+        background: rgb(185 226 153 / 10%);
+        color: #c3ec9f;
+      }
+
+      .topbar-note {
+        color: #a4afa4;
+        font-size: 13px;
+      }
+
+      main {
+        display: grid;
+        flex: 1;
+        place-items: center;
+        padding: 48px 24px 80px;
+      }
+
+      .hero {
+        width: min(100%, 620px);
+        text-align: center;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 22px;
+        color: #c3ec9f;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #a9df7d;
+        box-shadow: 0 0 14px rgb(169 223 125 / 70%);
+        content: "";
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(42px, 8vw, 72px);
+        font-weight: 650;
+        letter-spacing: -0.065em;
+        line-height: 1.02;
+      }
+
+      .intro {
+        max-width: 450px;
+        margin: 20px auto 34px;
+        color: #aeb8ad;
+        font-size: 16px;
+        line-height: 1.7;
+      }
+
+      .download-card {
+        max-width: 440px;
+        margin-inline: auto;
+        padding: 24px;
+        border: 1px solid rgb(222 239 214 / 12%);
+        border-radius: 20px;
+        background: linear-gradient(145deg, rgb(255 255 255 / 5%), rgb(255 255 255 / 2%));
+        box-shadow: 0 24px 80px rgb(0 0 0 / 24%);
+        text-align: left;
+      }
+
+      .file-info {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 20px;
+      }
+
+      .file-icon {
+        display: grid;
+        width: 48px;
+        height: 48px;
+        flex: 0 0 auto;
+        place-items: center;
+        border-radius: 14px;
+        background: rgb(185 226 153 / 10%);
+        color: #c3ec9f;
+      }
+
+      .file-name {
+        margin: 0 0 5px;
+        font-size: 15px;
+        font-weight: 650;
+      }
+
+      .file-meta {
+        margin: 0;
+        color: #a4afa4;
+        font-size: 13px;
+      }
+
+      .download-button {
+        display: flex;
+        min-height: 54px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: 0;
+        border-radius: 12px;
+        background: #c3ec9f;
+        color: #142012;
+        font-size: 15px;
+        font-weight: 750;
+        text-decoration: none;
+        transition: background-color 150ms ease, transform 150ms ease;
+      }
+
+      .download-button:hover {
+        transform: translateY(-1px);
+        background: #d3f5b5;
+      }
+
+      .download-button:focus-visible,
+      .topbar a:focus-visible {
+        outline: 3px solid #f1f5ee;
+        outline-offset: 4px;
+      }
+
+      .trust-note {
+        display: flex;
+        align-items: flex-start;
+        gap: 9px;
+        margin: 17px 2px 0;
+        color: #a4afa4;
+        font-size: 12px;
+        line-height: 1.55;
+      }
+
+      .trust-note svg {
+        flex: 0 0 auto;
+        margin-top: 1px;
+        color: #c3ec9f;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: center;
+        padding-block: 24px;
+        border-top: 1px solid rgb(222 239 214 / 9%);
+        color: #879287;
+        font-size: 12px;
+        text-align: center;
+      }
+
+      @media (max-width: 520px) {
+        .topbar,
+        .footer {
+          width: min(100% - 32px, 1080px);
+        }
+
+        .topbar {
+          padding-block: 20px;
+        }
+
+        .topbar-note {
+          font-size: 11px;
+        }
+
+        main {
+          padding: 54px 16px 64px;
+        }
+
+        .intro {
+          font-size: 15px;
+        }
+
+        .download-card {
+          padding: 19px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <a class="brand" href="./" aria-label="Geri-age AI age app download home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none">
+              <path d="M7.5 8.5h9a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.7"/>
+              <path d="m8 5 2 3.5M16 5l-2 3.5M9 12v3m6-3v3" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"/>
+            </svg>
+          </span>
+          Geri-age AI age app
+        </a>
+        <span class="topbar-note">Official download</span>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="page-title">
+          <p class="eyebrow">Made for Android</p>
+          <h1 id="page-title">Geri-age AI.</h1>
+          <p class="intro">Download the Geri-age AI age app for Android directly from its developer.</p>
+
+          <div class="download-card">
+            <div class="file-info">
+              <span class="file-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3.75v10.5m0 0 4-4m-4 4-4-4M5 15.75v2.5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+                </svg>
+              </span>
+              <div>
+                <p class="file-name">Geri-age AI age app</p>
+                <p class="file-meta">APK installer · Latest release</p>
+              </div>
+            </div>
+            <a class="download-button" href="./App/app-release.apk" download>
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 3.75v10.5m0 0 4-4m-4 4-4-4M5 15.75v2.5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+              </svg>
+              Download APK
+            </a>
+            <p class="trust-note">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 3.5 19 6v5.5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-2.5Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.6"/>
+                <path d="m9 12 2 2 4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+              </svg>
+              Only install APK files from sources you trust. Android may ask you to allow installation from your browser.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">Provided by the app developer</footer>
+    </div>
+  </body>
+</html>
